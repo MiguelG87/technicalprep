@@ -1,4 +1,25 @@
 public class ExamplesBigO {
+    //Space Complexity
+    int sum(int n) { /*Ex. 1 */
+        if(n <= 0) {
+            return 0;
+        }
+        return n + sum(n-1);
+    }
+    // sum(4)
+    //   ->  sum(3)
+    //     ->    sum(2)
+    //         ->    sum(1)
+    //             ->    sum(0)
+
+    int pairSumSequence(int n) { /*Ex. 2 */
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            sum += pairSum(i, i + 1);
+        }
+        return a + b;
+    }
+
 
     //Example 1
     //What is the  runtime of the below code?
@@ -19,7 +40,7 @@ public class ExamplesBigO {
     void printPairs(int [] array) {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {
-                System.out.println(array[1] + "," + array[j]);
+                System.out.println(array[1] + ", " + array[j]);
             }
         }
     }
@@ -28,8 +49,8 @@ public class ExamplesBigO {
     //What is the  runtime of the below code?
     void printUnorderedPairs (int[] array) {
         for (int i = 0; i < array.length; i++) {
-            for (int j = i + 1;j < array.length; j++ ) {
-                System.out.println(array[i] + "," + array[j]);
+            for (int j = i + 1; j < array.length; j++ ) {
+                System.out.println(array[i] + ", " + array[j]);
             }
         }
     }
