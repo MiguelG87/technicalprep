@@ -19,8 +19,8 @@ public class ExamplesBigO {
         }
         return a + b;
     }
-
-
+    
+    
     //Example 1
     //What is the  runtime of the below code?
     void foo(int[] array) {
@@ -52,6 +52,19 @@ public class ExamplesBigO {
             for (int j = i + 1; j < array.length; j++ ) {
                 System.out.println(array[i] + ", " + array[j]);
             }
+        }
+    }
+
+    //Example 4
+    //What is the  runtime of the below code?
+    void printUnorderedPairs(int[] arrayA, int[] arrayB) {
+        for(int i = 0; i < arrayA.length; i++) {
+            for ( int j = 0; arrayB.length; j++) {
+                if (arrayA[i] < arrayB[j]) {
+                    System.out.println(arrayA[i] + "," + arrayB[j]);
+                }
+            }
+            
         }
     }
 }
