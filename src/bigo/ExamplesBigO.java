@@ -67,4 +67,17 @@ public class ExamplesBigO {
             
         }
     }
+
+    //Example 5
+    //What is the  runtime of the below code?
+    void printorderedPairs(int[] arrayA, int[] arrayB) {
+        for(int i = 0; i < arrayA.length; i++) {
+            for ( int j = 0; arrayB.length; j++) {
+                if (arrayA[i] < arrayB[j]) {
+                    System.out.println(arrayA[i] + "," + arrayB[j]);
+                }
+            }
+            
+        }
+    }
 }
