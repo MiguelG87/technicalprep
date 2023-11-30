@@ -70,14 +70,25 @@ public class ExamplesBigO {
 
     //Example 5
     //What is the  runtime of the below code?
-    void printorderedPairs(int[] arrayA, int[] arrayB) {
+    void printUnorderedPairs2(int[] arrayA, int[] arrayB) {
         for(int i = 0; i < arrayA.length; i++) {
             for ( int j = 0; arrayB.length; j++) {
-                if (arrayA[i] < arrayB[j]) {
+                for (int k = 0; k < 1000; k++) {
                     System.out.println(arrayA[i] + "," + arrayB[j]);
                 }
             }
             
+        }
+    }
+
+    //Example 6
+    //What is the  runtime of the below code?
+    void reverse(int[] array) {
+        for(int i = 0; i < array.length/2; i++) {
+            int other = array.length - i - 1;
+            int temp = array[i];
+            array[i] = array[other];
+            array[other] = temp;
         }
     }
 }
