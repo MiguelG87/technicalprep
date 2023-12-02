@@ -91,4 +91,13 @@ public class ExamplesBigO {
             array[other] = temp;
         }
     }
+
+    //Example 9
+    //What is the  runtime of the below code?
+    int sum(Node node) {
+        if (node == null) {
+            return 0;
+        }
+        return sum(node.left) + node.value + sum(node.right);
+    }
 }
