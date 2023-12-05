@@ -100,4 +100,16 @@ public class ExamplesBigO {
         }
         return sum(node.left) + node.value + sum(node.right);
     }
+
+    //Example 10
+    //What is the time complexity of this function?
+    boolean isPrime(int n) {
+        for (int x = 2; x * x <= n; x++) {
+            if (n % x == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
 }
