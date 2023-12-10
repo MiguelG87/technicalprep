@@ -139,11 +139,11 @@ public class ExamplesBigO {
         }
     }
     //Example 13
-    int fib(int n) {
-        if (n <= 0) return 0;
-        else if (n == 1) return 1;
-        return fib(n - 1) + fib(n -2);
-    }
+    // int fib(int n) {
+    //     if (n <= 0) return 0;
+    //     else if (n == 1) return 1;
+    //     return fib(n - 1) + fib(n -2);
+    // }
 
     //Example 14
     void allFib(int n) {
