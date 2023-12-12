@@ -186,4 +186,17 @@ public class ExamplesBigO {
                 return curr;
             }
         }
+
+
+        //Extra Examples
+        
+
+        //Example VI.1
+        int product(int a, int b) {
+            int sum = 0;
+            for (int i = 0; i < b; i++) {
+                sum += a;
+            }
+            return sum;
+        }
 }
