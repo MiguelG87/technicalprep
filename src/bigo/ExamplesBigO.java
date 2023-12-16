@@ -219,4 +219,15 @@ public class ExamplesBigO {
             int div = a / b;
             return a - div * b;
         }
+
+        //Example VI.4
+        int div(int a, int b) {
+            int count = 0;
+            int sum = b;
+            while (sum <= a) {
+                sum += b;
+                count++;
+            }
+            return count;
+        }
 }
